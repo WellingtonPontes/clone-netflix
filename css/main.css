@@ -21,6 +21,13 @@ header nav a {
 header nav a:hover{
     color: #fff;
 }
+.menu{
+    position: fixed;
+    z-index: 300000;
+    background-color: var(--preta);
+    width: 100%;
+    padding: 10px;
+}
 
 header .container {
     display: flex;
@@ -29,16 +36,24 @@ header .container {
     align-items: center; 
     /* esse justify ele justifica os objetos usando o espaço q tem pra ele trabalhar no horrizontal */
     justify-content: space-between;
-    position: fixed;
-    z-index: 300000;
-    background-color: var(--preta);
-    width: 100%;
 }
+/* video */
+.bg_video{
+    position: absolute;
+	width: 100%;
+	height: 670px;
+	z-index: -1000;
+    box-sizing: border-box;
+	/* background: url(../img/cover-omy.jpg) no-repeat; */
+	background-size: cover; 
+}
+
 /* filme principal */
 .filme-pricipal{
+
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%) ,url('../img/cover-omy.jpg');
-    height: 600px;
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%);
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
 

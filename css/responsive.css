@@ -5,8 +5,28 @@
     }
     .botao{
         margin-top: 5px;
-
+        margin-bottom: 5px;
     }
+   
+    .filme-pricipal .container {
+        background-size: cover;
+        margin-top: 75px;
+        text-justify: auto;
+       
+    }
+    .filme-pricipal{
+        height: 600px;
+        background:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%),url(../img/celular.jpg);
+        background-size: cover;
+    }
+    .bg_video{
+        display: none;
+        background: url(../img/celular.jpg);
+    }
+    .carrosel-filme{
+        margin-top: 10px;
+    }
+
 }
 
 @media screen and (min-width:1000px){
@@ -14,6 +34,10 @@
         width: 50%;
     }
     .filme-pricipal{
-        height: 550px;
+        height: 670px;
+    }
+   
+    .carrosel-filme{
+        margin-top: 30px;
     }
 }
