@@ -1,0 +1,94 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+body{
+    background: var(--preta);
+    color: white;
+
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin-left: 7px;
+}
+header nav a {
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    /* apartidir do display flex o aling-items centraliza os items nas linhas que eles estão
+    já que o display flex por padrão deixa tudo em linha */
+    align-items: center; 
+    /* esse justify ele justifica os objetos usando o espaço q tem pra ele trabalhar no horrizontal */
+    justify-content: space-between;
+    position: fixed;
+    z-index: 300000;
+    background-color: var(--preta);
+    width: 100%;
+}
+/* filme principal */
+.filme-pricipal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%) ,url('../img/cover-omy.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+} 
+.filme-pricipal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.filme-pricipal .titulo{
+    /* margin-top: 10%; */
+    font-size: 55px;
+}
+.botao{
+    background-color: rgb(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 20px 35px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 20px;
+}
+.filme-pricipal .container{
+    width: 60%;
+}
+
+/* img carrossel */
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+.carrosel-filme{
+    margin-top: 10px;
+}
